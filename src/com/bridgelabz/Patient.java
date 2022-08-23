@@ -7,7 +7,7 @@ public class Patient {
     int patientAge;
     String patientCity;
     String patientState;
-    int patientPhoneNumber;
+    String patientPhoneNumber;
     PatientDepartment patientDepartment;
 
     Scanner sc = new Scanner(System.in);
@@ -31,12 +31,8 @@ public class Patient {
         this.patientState = patientState;
     }
 
-    public void setPatientPhoneNumber(int patientPhoneNumber) {
+    public void setPatientPhoneNumber(String patientPhoneNumber) {
         this.patientPhoneNumber = patientPhoneNumber;
-    }
-
-    public PatientDepartment getPatientDepartment() {
-        return patientDepartment;
     }
 
     public void selectPatientDepartment() {
@@ -54,5 +50,17 @@ public class Patient {
             System.out.println("select valid option");
             selectPatientDepartment();
         }
+    }
+
+    @Override
+    public String toString() {
+        return "Patient{" +
+                "patientName='" + patientName + '\'' +
+                ", patientAge=" + patientAge +
+                ", patientCity='" + patientCity + '\'' +
+                ", patientState='" + patientState + '\'' +
+                ", patientPhoneNumber=" + patientPhoneNumber +
+                ", patientDepartment=" + patientDepartment +
+                '}';
     }
 }

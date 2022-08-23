@@ -8,8 +8,10 @@ public class Hospital {
 
     Scanner sc = new Scanner(System.in);
     static HashMap<String,Hospital> hospitalMap = new HashMap<>();
-    String hospitalName;
     ArrayList<Patient> patientList = new ArrayList<>();
+
+    public Hospital() {
+    }
 
     static Hospital createNewHospital(String hospitalName){
         Hospital hospital = new Hospital();
@@ -19,6 +21,7 @@ public class Hospital {
 
     Patient createPatient(){
         Patient patient = new Patient();
+        patient.selectPatientDepartment();
         System.out.println("Enter patient name");
         patient.setPatientName(sc.next());
         System.out.println("Enter patient age");
@@ -28,10 +31,8 @@ public class Hospital {
         System.out.println("Enter patient state");
         patient.setPatientState(sc.next());
         System.out.println("Enter patient phone number");
-        patient.setPatientPhoneNumber(sc.nextInt());
-        patient.selectPatientDepartment();
+        patient.setPatientPhoneNumber(sc.next());
         return patient;
-
     }
 
    void addPatient(){
