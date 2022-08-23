@@ -34,7 +34,7 @@ public class Hospital {
 
     }
 
-    void addPatient(){
+   void addPatient(){
         Patient patient = createPatient();
         patientList.add(patient);
         System.out.println(patient);

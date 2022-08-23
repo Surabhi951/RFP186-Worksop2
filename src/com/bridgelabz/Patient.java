@@ -15,7 +15,6 @@ public class Patient {
     public enum PatientDepartment {
         ONCOLOGY, NEUROLOGY, CARDIOLOGY, GYNOCOLOGY
     }
-
     public void setPatientName(String patientName) {
         this.patientName = patientName;
     }
