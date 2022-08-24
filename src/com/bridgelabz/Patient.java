@@ -12,6 +12,10 @@ public class Patient {
 
     Scanner sc = new Scanner(System.in);
 
+    public String getPatientName() {
+        return patientName;
+    }
+
     public enum PatientDepartment {
         ONCOLOGY, NEUROLOGY, CARDIOLOGY, GYNOCOLOGY
     }
