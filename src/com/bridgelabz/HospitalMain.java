@@ -10,7 +10,7 @@ public class HospitalMain {
         boolean doExit = false;
         while (!doExit){
             System.out.println("HospitalList:" +Hospital.hospitalMap.keySet());
-            System.out.println("Select option: \n1.create new hospital \n2.add patient \n3.Edit patient \n4Exit");
+            System.out.println("Select option: \n1.create new hospital \n2.add patient \n3.Edit patient \n4.Show patient by city \n5.Exit");
             int option = sc.nextInt();
             switch (option) {
                 case 1 -> {
@@ -20,7 +20,8 @@ public class HospitalMain {
                 }
                 case 2 -> hospital.addPatient();
                 case 3 -> hospital.editPatient();
-                case 4 -> doExit = true;
+                case 4 -> hospital.showPatientByCity();
+                case 5 -> doExit = true;
                 default -> System.out.println("select valid option");
             }
         }

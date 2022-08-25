@@ -16,6 +16,10 @@ public class Patient {
         return patientName;
     }
 
+    public String getPatientCity() {
+        return patientCity;
+    }
+
     public enum PatientDepartment {
         ONCOLOGY, NEUROLOGY, CARDIOLOGY, GYNOCOLOGY
     }

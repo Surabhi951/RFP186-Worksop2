@@ -73,6 +73,19 @@ public class Hospital {
         }
     }
 
-
+   void showPatientByCity(){
+        boolean isPatientFound = false;
+        System.out.println("Enter patient city");
+        String city = sc.next();
+        for (Patient patient : patientList) {
+            if (patient.getPatientCity().equals(city)) {
+                isPatientFound = true;
+                System.out.println(patient);
+            }
+        }
+        if (!isPatientFound) {
+            System.out.println("patient not found");
+        }
+    }
 }
 
