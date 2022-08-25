@@ -1,7 +1,6 @@
 package com.bridgelabz;
 
 import java.util.Scanner;
-
 public class Patient {
     String patientName;
     int patientAge;

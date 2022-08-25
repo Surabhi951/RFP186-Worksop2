@@ -5,7 +5,6 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class Hospital {
-
     Scanner sc = new Scanner(System.in);
     static HashMap<String, Hospital> hospitalMap = new HashMap<>();
     ArrayList<Patient> patientList = new ArrayList<>();
